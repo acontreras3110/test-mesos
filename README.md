@@ -22,8 +22,9 @@ POST → http://localhost:3000/UFCLP
 El servicio recibirá la información de la nave a través de un HTTP POST en
 el siguiente formato:
 
-####fecha: formato "DD-MM-YYYY"
-####valor_uf : formato numerico solo acepta punto como decimal
+#### fecha: formato "DD-MM-YYYY"
+
+#### valor_uf : formato numerico solo acepta punto como decimal
 
 ```JSON
 {
