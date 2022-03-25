@@ -1,0 +1,19 @@
+service: test-mesos
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
+
+functions:
+  serviceGET:
+    handler: src/handlers/handlerUFCLP.UFCLP
+    events:
+      - httpApi:
+          path: /UFCLP
+          method: post
